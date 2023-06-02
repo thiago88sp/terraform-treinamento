@@ -47,7 +47,7 @@ Esta jornada self-lead é dividida em 7 seções:
 
 - [Azure Account](https://azure.microsoft.com/en-us/free/)
 
-## Como usar este formato de repo / self-lead format
+## Como usar este formato de repo / formato self-lead
 
 Este repositório é dividido em 7 seções, cada seção tem um arquivo README.md que o guiará pelo self-lead. Cada seção pode ter vários arquivos README.md que irão guiá-lo através da seção. Eles também são numerados para ajudá-lo a navegar.
 
