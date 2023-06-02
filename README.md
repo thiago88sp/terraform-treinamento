@@ -12,26 +12,32 @@ Esta jornada self-lead é dividida em 7 seções:
 - Terraform Basic Commands
 - Introduction to Terraform resources
 - Using Terraform Azure Provider
+
 2. Terraform Variables
 - Introduction to Terraform Variables
 - Terraform tfvars
 - Local Variables
+
 3. Terraform State
 - Introduction to Terraform State
 - Local vs Remote State
+
 4. Terraform Advanced
 - Depends On
 - For Each
 - Count
 - Conditional Expressions
 - Dynamic Blocks
+
 5. Secret Management in Azure
 - Introduction to Azure Key Vault
 - Introduction to Azure Key Vault Secrets
 - Deploying Secrets to Azure Key Vault using Terraform
+
 6. Terraform Modules
 - Introduction to Terraform Modules
 - Using Terraform Modules & deploying
+
 7. Terraform AzAPI
 - Introduction to Terraform AzAPI
 - Using Terraform AzAPI & deploying
