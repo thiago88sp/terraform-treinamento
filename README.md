@@ -47,7 +47,7 @@ Este repositório é dividido em 7 seções, cada seção tem um arquivo README.
 
 Por favor, comece desde o início e percorra a configuração de self-lead. Começando em 1 e trabalhando até 7.
 
-À medida que você trabalha com a autoliderança, você será solicitado a executar várias formas de terra. Certifique-se de estar no diretório `terraform` correto ao executar os comandos terraform. (Você aprenderá como fazer isso na seção 3 [terraform state](https://github.com/thiago88sp/terraform-treinamento/tree/main/3-terraform-state)) - Lembre-se também de destruir seus recursos quando terminar cada seção.
+À medida que você trabalha com a autoliderança, você será solicitado a executar várias formas de terra. Certifique-se de estar no diretório `terraform` correto ao executar os comandos terraform. (Você aprenderá como fazer isso na seção 3 [terraform state](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state)) - Lembre-se também de destruir seus recursos quando terminar cada seção.
 
 ## Solicite um novo tutorial / recurso neste repositório
 
