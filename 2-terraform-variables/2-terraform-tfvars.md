@@ -1,26 +1,26 @@
 # Terraform tfvars
 
-tfvars files are used to store variables that are used in Terraform. These files are used to store sensitive information such as passwords and keys. These files are not stored in the repository and are ignored by git.
+Os arquivos tfvars são usados para armazenar variáveis usadas no Terraform. Esses arquivos são usados para armazenar informações confidenciais, como senhas e chaves. Esses arquivos não são armazenados no repositório e são ignorados pelo git.
 
-## Terraform tfvars - pros
+## Terraform tfvars - profissionais
 
-- Recommended for storing sensitive information
-- Recommended for storing information that is not to be shared
+- Recomendado para armazenar informações confidenciais
+- Recomendado para armazenar informações que não devem ser compartilhadas
 
-## Terraform tfvars - cons
+## Terraform tfvars - contras
 
-- Requires additional configuration
-- Requires additional cost
+- Requer configuração adicional
+- Requer custo adicional
 
-## Terraform tfvars - example
+## Terraform tfvars - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using a tfvars file to pass the name of the resource group into Terraform.
+Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos um arquivo tfvars para passar o nome do grupo de recursos para o Terraform.
 
-### Terraform tfvars - example - variables.tf
+### Terraform tfvars - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis é uma prática recomendada, isso permite que você mantenha todas as suas variáveis em um só lugar.
 
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
@@ -30,9 +30,9 @@ variable "resource_group_name" {
 
 ```
 
-### Terraform tfvars - example - terraform.tfvars
+### Terraform tfvars - exemplo - terraform.tfvars
 
-Notice the reference to the variable `resource_group_name` in the tfvars file. This is used to pass the value `tamopsrg` to the variable `resource_group_name`.
+Observe a referência à variável `resource_group_name` no arquivo tfvars. Isso é usado para passar o valor `tamopsrg` para a variável `resource_group_name`.
 
 ```terraform
 
@@ -40,7 +40,7 @@ resource_group_name = "tamopsrg"
 
 ```
 
-### Terraform tfvars - example - main.tf
+### Terraform tfvars - exemplo - main.tf
 
 ```terraform
 
@@ -51,9 +51,9 @@ resource "azurerm_resource_group" "rg" {
 
 ```
 
-### Terraform tfvars - example - terraform init
+### Terraform tfvars - exemplo - terraform init
 
-Running terraform with the tfvars file is done by using the `-tfvars-file` flag. example below
+A execução do terraform com o arquivo tfvars é feita usando o sinalizador `-tfvars-file`. exemplo abaixo
 
 ```terraform
 

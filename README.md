@@ -1,5 +1,5 @@
 # Terraform no Azure
-Um repositório autoconduzido para fornecer a você uma compreensão sobre a implantação do Terraform no Azure, desde o básico até a implantação no Azure.
+Um repositório self-led para fornecer a você uma compreensão sobre a implantação do Terraform no Azure, desde o básico até a implantação no Azure.
 
 ## O que você vai aprender
 
@@ -58,4 +58,5 @@ Por favor, comece desde o início e percorra a configuração de self-lead. Come
 ## Solicite um novo tutorial / recurso neste repositório
 
 Entre em contato comigo ou levante um problema no repositório do GitHub se desejar que eu inclua conteúdo adicional - acho que será um trabalho contínuo em andamento para fornecer a você uma compreensão do Terraform e, ao mesmo tempo, oferecer a capacidade de implantar recursos em Azure!
+
 

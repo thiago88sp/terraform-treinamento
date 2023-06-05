@@ -1,25 +1,25 @@
-# Terraform Variables
+# Variáveis de Terraform
 
-Terraform Variables are a way to pass information into Terraform, this can be done in a number of ways, but the most common is to use a `variables.tf` file.
+Variáveis do Terraform são uma forma de passar informações para o Terraform, isso pode ser feito de várias maneiras, mas a mais comum é usar um arquivo `variables.tf`.
 
-## Terraform Variables - pros
+## Variáveis Terraform - prós
 
-- Allows you to pass information into Terraform
-- Allows you to reuse the same Terraform configuration with different values
+- Permite passar informações para o Terraform
+- Permite reutilizar a mesma configuração do Terraform com valores diferentes
 
-## Terraform Variables - cons
+## Variáveis Terraform - contras
 
-- Requires additional configuration
+- Requer configuração adicional
 
-## Terraform Variables - example
+## Variáveis Terraform - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using a variable to pass the name of the resource group into Terraform.
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando uma variável para passar o nome do grupo de recursos para o Terraform.
 
-### Terraform Variables - example - variables.tf
+### Variáveis Terraform - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis é uma prática recomendada, isso permite que você mantenha todas as suas variáveis em um só lugar.
 
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
@@ -30,9 +30,9 @@ variable "resource_group_name" {
 
 ```
 
-### Terraform Local Variables - example
+### Variáveis locais do Terraform - exemplo
 
-As below, using local variables is done by using the `var` keyword followed by the name of the variable. In this example, we are using the variable `resource_group_name` that is going to be ammended with a local variable.
+Como abaixo, o uso de variáveis locais é feito usando a palavra-chave `var` seguida do nome da variável. Neste exemplo, estamos usando a variável `resource_group_name` que será alterada com uma variável local.
 
 ### variables.tf
 
@@ -47,7 +47,7 @@ variable "resource_group_name" {
 
 #### main.tf
 
-Ammending the variable `resource_group_name` to include "-local" using a local variable and referencing the local variable in the resource group.
+Corrigindo a variável `resource_group_name` para incluir "-local" usando uma variável local e referenciando a variável local no grupo de recursos.
 
 ```terraform
 
