@@ -1,5 +1,5 @@
-# Terraform Installation
+# Instalação do Terraform
 
-The purpose of this tutorial is to setup the initial requirements to complete this lab/workshop.
-- Terraform installation
-- Visual Studio Code (Recommended)
+O objetivo deste tutorial é configurar os requisitos iniciais para concluir este laboratório/workshop.
+- Instalação de Terraform
+- Visual Studio Code (recomendado)
