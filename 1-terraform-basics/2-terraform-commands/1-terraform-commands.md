@@ -1,10 +1,10 @@
-# Terraform Basic Commands
+# Comandos Básicos do Terraform
 
-Lets look at the basic commands you shuld know to begin working with and deploying Terraform. Throughout I may add some further but to begin, have a look at understanding of these!
+Vejamos os comandos básicos que você deve saber para começar a trabalhar e implantar o Terraform. Ao longo do livro, posso acrescentar mais alguns, mas para começar, dê uma olhada na compreensão deles!
 
-## Terraform Version
+## Versão do Terraform
 
-Check the version of Terraform you are running using: `terraform -v`
+Verifique a versão do Terraform que você está executando usando: `terraform -v`
 
 ```bash
 terraform -v 
@@ -12,7 +12,7 @@ terraform -v
 
 ## Terraform Init
 
-Terraform init is used to initialise terarform and prepare your working directory and downtime the relevant providers etc.
+Terraform init é usado para inicializar o terarform e preparar seu diretório de trabalho e o tempo de inatividade dos provedores relevantes, etc.
 
 ```bash
 terraform init
@@ -20,7 +20,7 @@ terraform init
 
 ## Terraform Validate
 
-A great command to have, validates the terraform configuration in the current directory. Great to use in terms of checking syntax and configuration is correct.
+Um ótimo comando para validar a configuração do terraform no diretório atual. Ótimo para usar em termos de verificação de sintaxe e configuração correta.
 
 ```bash
 terraform validate
@@ -28,7 +28,7 @@ terraform validate
 
 ## Terraform Plan
 
-Creates and shows a Plan of your Terraform configuration, this includes additions, updates and removals.
+Cria e mostra um Plano de sua configuração do Terraform, incluindo adições, atualizações e remoções.
 
 ```bash
 terraform plan
@@ -36,7 +36,7 @@ terraform plan
 
 ## Terraform apply
 
-Applies the Terraform configuration, in this case - it will be applying Terraform configuration that will deploy into Azure.
+Aplica a configuração do Terraform, neste caso - será aplicada a configuração do Terraform que será implantada no Azure.
 
 ```bash
 terraform apply
@@ -44,7 +44,7 @@ terraform apply
 
 ## Terraform Destroy
 
-Used to destroy a Terraform configuration, when you run this command successfully - it will also destroy the resources in Azure.
+Usado para destruir uma configuração do Terraform, quando você executa esse comando com êxito - ele também destrói os recursos no Azure.
 
 ```bash
 terraform destroy
@@ -52,7 +52,7 @@ terraform destroy
 
 ## Terraform Format
 
-Formats current directory with Terraform/HCL standards.
+Formata o diretório atual com os padrões Terraform/HCL.
 
 ```bash
 terraform fmt

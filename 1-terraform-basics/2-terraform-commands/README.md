@@ -1,3 +1,3 @@
-# Terraform Commands
+# Comandos Terraform
 
-An introduction to the Terraform commands available, this will cover the basic commands to get you started with Terraform.
+Uma introdução aos comandos do Terraform disponíveis, abrangerá os comandos básicos para você começar a usar o Terraform.

@@ -1,4 +1,3 @@
-# Terraform Resources
+# Recursos do Terraform
 
-Looking at terraform resources and data references.
-
+Olhando para recursos de terraform e referências de dados.

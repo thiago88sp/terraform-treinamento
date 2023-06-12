@@ -1,4 +1,3 @@
-# Terraform Azure Provider
+# Provedor Terraform Azure
 
-Providers are neccessary to Terraform to successfully run and build resources - in this case, Azure resources! 
-
+Os provedores são necessários para o Terraform executar e criar recursos com êxito - neste caso, recursos do Azure!

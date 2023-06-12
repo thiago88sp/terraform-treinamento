@@ -1,28 +1,28 @@
-## What is a Terraform Provider?
+## O que é um Provedor Terraform?
 
-Terraform providers are plugins that allow Terraform to interact with the underlying API's of various services. In this case, we will be using the Azure Provider to interact with Azure.
+Os provedores Terraform são plug-ins que permitem que o Terraform interaja com as APIs subjacentes de vários serviços. Nesse caso, usaremos o Provedor do Azure para interagir com o Azure.
 
-## Why do we need a Terraform Provider?
+## Por que precisamos de um Provedor Terraform?
 
-Providers are needed to allow Terraform to interact with the underlying API's of various services. In this case, we will be using the Azure Provider to interact with Azure.
+Os provedores são necessários para permitir que o Terraform interaja com as APIs subjacentes de vários serviços. Nesse caso, usaremos o Provedor do Azure para interagir com o Azure.
 
-## Azure Provider
+## Provedor do Azure
 
-The Azure Provider is used to interact with the many resources supported by Azure Resource Manager (ARM). The provider needs to be configured with the proper credentials before it can be used.
+O Provedor do Azure é usado para interagir com os muitos recursos suportados pelo Azure Resource Manager (ARM). O provedor precisa ser configurado com as credenciais adequadas antes de poder ser usado.
 
-## Azure Provider Configuration
+## Configuração do Provedor do Azure
 
-The Azure Provider is used to configure the proper credentials before it can be used.
+O Provedor do Azure é usado para configurar as credenciais apropriadas antes de poder ser usado.
 
-### Azure Provider Configuration - Azure CLI 2.0
+### Configuração do Provedor do Azure - CLI do Azure 2.0
 
-The Azure Provider can be configured using the Azure CLI 2.0, which is installed as part of the Azure CLI 2.0. If you have already installed the Azure CLI 2.0, you can view the currently authenticated account name with the az account show command:
+O Provedor do Azure pode ser configurado usando a CLI do Azure 2.0, que é instalada como parte da CLI do Azure 2.0. Se você já instalou a CLI do Azure 2.0, poderá exibir o nome da conta atualmente autenticada com o comando az account show:
 
 ```bash
 az account show --query "{ subscription_id: id, tenant_id: tenantId }"
 ```
 
-The output should be similar to the following:
+A saída deve ser similar à seguinte:
 
 ```json
 {
@@ -31,7 +31,7 @@ The output should be similar to the following:
 }
 ```
 
-The subscription_id and tenant_id values can be used in the provider configuration block:
+Os valores de subscription_id e tenant_id podem ser usados no bloco de configuração do provedor:
 
 ```terraform
 

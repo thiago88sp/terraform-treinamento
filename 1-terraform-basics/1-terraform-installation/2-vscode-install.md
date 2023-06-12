@@ -1,22 +1,21 @@
-# Visual Studio Code Installation (Optional)
+# Instalação do Visual Studio Code (opcional)
 
-I do recommend using Visual Code for code editing and working with this lab/workshop.
+Eu recomendo usar o Visual Code para edição de código e trabalhar com este laboratório/workshop.
 
 ## Windows
-Recommend to use the Windows Package Manager [Chocolatey](https://chocolatey.org/), its great!
-- Once you have this configured, run the below:
+Recomendo usar o Gerenciador de Pacotes do Windows [Chocolatey](https://chocolatey.org/), é ótimo!
+- Depois de configurar isso, execute o seguinte:
 ```powershell
 choco install vscode
 ```
 
 ## Mac
-Recommend to use the Mac Package Manager [HomeBrew](https://brew.sh/)
-- Once you have this configured, run the below:
+Recomendo usar o Gerenciador de Pacotes do Mac [HomeBrew](https://brew.sh/)
+- Depois de configurar isso, execute o seguinte:
 ```bash
 brew install --cask visual-studio-code
 ```
 
-## Recomended VSCode extensions
+## Extensões recomendadas do VSCode
 
-The [HashiCorp Terraform Extension for Visual Studio Code (VS Code)](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) with the Terraform Language Server adds editing features for Terraform files such as syntax highlighting, IntelliSense, code navigation, code formatting, module explorer and much more!
-
+A [HashiCorp Terraform Extension for Visual Studio Code (VS Code)](https://marketplace.visualstudio.com/items?itemName=HashiCorp.terraform) com o Terraform Language Server adiciona recursos de edição para arquivos Terraform, como realce de sintaxe, IntelliSense , navegação de código, formatação de código, explorador de módulos e muito mais!

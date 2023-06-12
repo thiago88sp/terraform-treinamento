@@ -1,10 +1,10 @@
-# Terraform Resources
+# Recursos do Terraform
 
-The primary deployments of Terraform is doing using one or more resources. They are the most commonly used component within Terraform. Each resource block will destroy at least one Azure resource. Resource blocks include virtual machines, virtual networks, resource groups etc.
+As principais implantações do Terraform são feitas usando um ou mais recursos. Eles são o componente mais usado no Terraform. Cada bloco de recurso destruirá pelo menos um recurso do Azure. Os blocos de recursos incluem máquinas virtuais, redes virtuais, grupos de recursos, etc.
 
-## Resource example
+## Exemplo de Resource
 
-The below contains a resource called `rg` that uses the terraform resource `azurerm_resource_group` to create an Azure Resource Group called `tamops` in region `UK South`
+O abaixo contém um recurso chamado `rg` que usa o recurso terraform `azurerm_resource_group` para criar um grupo de recursos do Azure chamado `tamops` na região `UK South`
 
 ```terraform
 resource "azurerm_resource_group" "rg" {
@@ -13,14 +13,14 @@ resource "azurerm_resource_group" "rg" {
 }
 ```
 
-Read further on resource usage [here](https://developer.hashicorp.com/terraform/language/resources/syntax)
+Leia mais sobre o uso de recursos [aqui](https://developer.hashicorp.com/terraform/language/resources/syntax)
 
-## Data source example
+## ## Exemplo de Data source
 
-If the above Azure Resource Group `tamops` has already been created previously or within another Terraform deployment, utilising the Data source - you can make reference to the resource group.
+Se os `tamops` do Grupo de Recursos do Azure acima já tiverem sido criados anteriormente ou em outra implantação do Terraform, utilizando a fonte de dados - você pode fazer referência ao grupo de recursos.
 
-The below references the data resource `azurerm_resource_group` `rg` to deploy Azure Storage Account `tamopsstorage` into.
-- notice the reference of `resource_group_name` & `location` is using the data reference of Resource Group?
+O abaixo faz referência ao recurso de dados `azurerm_resource_group` `rg` para implantar a conta de armazenamento do Azure `tamopsstorage`.
+- observe que a referência de `resource_group_name` e `location` está usando a referência de dados do Grupo de Recursos?
 
 ```terraform
 data "azurerm_resource_group" "rg" {
@@ -37,4 +37,4 @@ resource "azurerm_storage_account" "sa" {
 }
 ```
 
-Each resource and data resource has various outputs available, [here](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group.html#attributes-reference) shows the outputs available for the above data resource.
+Cada recurso e recurso de dados tem várias saídas disponíveis, [aqui](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/data-sources/resource_group.html#attributes-reference) mostra as saídas disponíveis para o recurso de dados acima.
