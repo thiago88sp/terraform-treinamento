@@ -1,4 +1,3 @@
-# Terraform Variables
+# Variáveis de Terraform
 
-A guide on how to use variables in Terraform.
-
+Um guia sobre como usar variáveis no Terraform.

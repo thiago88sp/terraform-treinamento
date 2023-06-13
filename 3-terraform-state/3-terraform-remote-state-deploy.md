@@ -1,21 +1,21 @@
-# Terraform Deploy using Remote State file 
+# Terraform Deploy usando arquivo de state remoto
 
-Review directory [remote-state-example](https://github.com/thomast1906/terraform-on-azure/tree/main/2-terraform-state/remote-state-example) and the Terraform configuration files.
+Revise o diretório [remote-state-example](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state/remote-state-example) e os arquivos de configuração do Terraform.
 
-## Create remote state storage account
+## Criar conta de armazenamento de state remoto
 
-Create a storage account to store the remote state file.
-1. Edit the [variables](https://github.com/thomast1906/terraform-on-azure/tree/main/2-terraform-state/scripts/1-create-terraform-storage.sh#L6-L7)
-2. Run the script `./scripts/1-create-terraform-storage.sh`
-3. The script will create
-- Azure Resource Group
-- Azure Storage Account
-- Azure Blob storage location within Azure Storage Account
-4. Successful script run will create a storage account with blob ready to state terraform state file
+Crie uma conta de armazenamento para armazenar o arquivo de estado remoto.
+1. Edite as [variáveis](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state/scripts/1-create-terraform-storage.sh#L6-L7)
+2. Execute o script `./scripts/1-create-terraform-storage.sh`
+3. O script criará
+- Grupo de Recursos do Azure
+- Conta de armazenamento do Azure
+- Local de armazenamento do Azure Blob na conta de armazenamento do Azure
+4. A execução bem-sucedida do script criará uma conta de armazenamento com blob pronto para declarar o arquivo de state do terraform
 
 ## Terraform init
 
-Run the following command to initialise Terraform when in the remote-state-example directory:
+Execute o seguinte comando para inicializar o Terraform quando estiver no diretório remote-state-example:
 
 ```terraform
 terraform init
@@ -23,37 +23,37 @@ terraform init
 
 ## Terraform plan
 
-Run the following command to create and show a plan of your Terraform configuration:
+Execute o seguinte comando para criar e mostrar um plano de sua configuração do Terraform:
 
 ```terraform
 terraform plan
 ```
 
-The plan will be similar to the previous local state example, but the state file will be stored in the Azure Storage Account rather than local, as shown in image below:
+O plano será semelhante ao exemplo de state local anterior, mas o arquivo de state será armazenado na Conta de Armazenamento do Azure em vez de local, conforme mostrado na imagem abaixo:
 
 ![Terraform plan](/images/terraform-plan.png)
 
 ## Terraform apply
 
-Run the following command to apply the Terraform configuration:
+Execute o seguinte comando para aplicar a configuração do Terraform:
 
 ```terraform
 terraform apply
 ```
 
-Review the apply this time, remote state stored - but will deploy the similar resources as the local state example.
+Revise a aplicação desta vez, o state remoto armazenado - mas implantará os recursos semelhantes ao exemplo do state local.
 
 ## Terraform destroy
 
-Run the following command to destroy the Terraform configuration:
+Execute o seguinte comando para destruir a configuração do Terraform:
 
 ```terraform
 terraform destroy
 ```
 
-## Terraform destroy - remote state storage account
+## Terraform destroy - conta de armazenamento de state remoto
 
-Run the following command to destroy the remote state storage account:
+Execute o seguinte comando para destruir a conta de armazenamento de state remoto:
 
-1. Edit the [variables](https://github.com/thomast1906/terraform-on-azure/tree/main/2-terraform-state/scripts/2-delete-terraform-storage.sh#L6)
-2. Run the script `./scripts/2-delete-terraform-storage.sh`
+1. Edite as [variáveis](https://github.com/thiago88sp/terraform-treinamento/blob/master/3-terraform-state/scripts/2-delete-terraform-storage.sh#L6)
+2. Execute o script `./scripts/2-delete-terraform-storage.sh`

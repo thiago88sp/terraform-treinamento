@@ -1,10 +1,10 @@
 #!/usr/bin/env bash
 #set -x
 
-# Deletes the relevant storage account to store terraform state
+# Exclui a conta de armazenamento relevante para armazenar o estado do terraform
 
 RESOURCE_GROUP_NAME="deploy-first-rg"
 
-# Delete Resource Group
+# Excluir grupo de recursos
 
 az group delete -n $RESOURCE_GROUP_NAME

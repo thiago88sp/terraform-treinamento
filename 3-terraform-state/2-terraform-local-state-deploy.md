@@ -1,8 +1,8 @@
-# Terraform Deploy using Local State file 
+# Terraform Deploy usando arquivo de estado local
 
-Review directory [local-state-example](https://github.com/thomast1906/terraform-on-azure/tree/main/2-terraform-state/local-state-example) and the Terraform configuration files.
+Revise o diretório [local-state-example](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state/local-state-example) e os arquivos de configuração do Terraform.
 
-Notice the reference to terraform backend in provider.tf
+Observe a referência ao backend terraform em provider.tf
 
 ```terraform
 terraform {
@@ -11,11 +11,11 @@ terraform {
 }
 ```
 
-This is telling Terraform to use the local state file.
+Isso está dizendo ao Terraform para usar o arquivo de state local.
 
 ## Terraform init
 
-Run the following command to initialise Terraform when in the local-state-example directory:
+Execute o seguinte comando para inicializar o Terraform quando estiver no diretório de exemplo de state local:
 
 ```terraform
 terraform init
@@ -23,16 +23,16 @@ terraform init
 
 ## Terraform plan
 
-Run the following command to create and show a plan of your Terraform configuration:
+Execute o seguinte comando para criar e mostrar um plano de sua configuração do Terraform:
 
 ```terraform
 terraform plan
 ```
 
-A successful plan will look like the following:
+Um plano bem-sucedido terá a seguinte aparência:
 
 ```terraform
-thomast@MGH97DTW40 local-state-example % terraform plan
+thiago@WINAPYhsTSuZd8T local-state-example % terraform plan
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -51,16 +51,16 @@ Plan: 1 to add, 0 to change, 0 to destroy.
 
 ## Terraform apply
 
-Run the following command to apply the Terraform configuration:
+Execute o seguinte comando para aplicar a configuração do Terraform:
 
 ```terraform
 terraform apply
 ```
 
-A successful apply will look like the following:
+Uma aplicação bem-sucedida terá a seguinte aparência:
 
 ```terraform
-thomast@MGH97DTW40 local-state-example % terraform apply
+thiago@WINAPYhsTSuZd8T local-state-example % terraform apply
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
   + create
@@ -85,7 +85,7 @@ Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
 
 ## Terraform destroy
 
-Run the following command to destroy the Terraform configuration:
+Execute o seguinte comando para destruir a configuração do Terraform:
 
 ```terraform
 terraform destroy
@@ -94,7 +94,7 @@ terraform destroy
 A successful destroy will look like the following:
 
 ```terraform
-thomast@MGH97DTW40 local-state-example % terraform destroy
+thiago@WINAPYhsTSuZd8T local-state-example % terraform destroy
 azurerm_resource_group.rg: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tamopslocalrg]
 azurerm_resource_group.rg: Destroying... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tamopslocalrg]
 azurerm_resource_group.rg: Destruction complete after 1s

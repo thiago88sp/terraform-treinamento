@@ -1,33 +1,33 @@
-# Terraform State - Local vs Remote
+# State do Terraform - Local x Remoto
 
-Terraform state is a file that is used to keep track of the resources that have been created by Terraform. This file is used to keep track of the resources that have been created, and also to keep track of the state of the resources that have been created.
+O State do Terraform é um arquivo usado para acompanhar os recursos que foram criados pelo Terraform. Esse arquivo é usado para acompanhar os recursos que foram criados e também para acompanhar o State dos recursos que foram criados.
 
 # Terraform local state
 
-Terraform local state is the default state that Terraform uses. This state is stored locally on the machine that Terraform is being run on. This state is stored in a file called `terraform.tfstate`. This file is stored in the same directory that Terraform is being run from.
+O State local do Terraform é o State padrão usado pelo Terraform. Esse State é armazenado localmente na máquina em que o Terraform está sendo executado. Este State é armazenado em um arquivo chamado `terraform.tfstate`. Este arquivo é armazenado no mesmo diretório do qual o Terraform está sendo executado.
 
-## Terraform local state - pros
+## Terraform local state - prós
 
-- Simple to use
-- No additional configuration required
+- Simples de usar
+- Nenhuma configuração adicional necessária
 
-## Terraform local state - cons
+## Terraform local state - contras
 
-- Not recommended for production use
-- Not recommended for use with multiple users
-- Not recommended for use with multiple Terraform workspaces
+- Não recomendado para uso em produção
+- Não recomendado para uso com vários usuários
+- Não recomendado para uso com vários espaços de trabalho do Terraform
 
-# Terraform remote state
+# State remoto do Terraform
 
-Terraform remote state is a state that is stored remotely. This state is stored in a remote location, in this case - it will be an Azure Storage Account.
+O State remoto do Terraform é um State armazenado remotamente. Este State é armazenado em um local remoto, neste caso - será uma Conta de Armazenamento do Azure.
 
-## Terraform remote state - pros
+## State remoto do Terraform - prós
 
-- Recommended for production use
-- Recommended for use with multiple users
-- Recommended for use with multiple Terraform workspaces
+- Recomendado para uso em produção
+- Recomendado para uso com vários usuários
+- Recomendado para uso com vários espaços de trabalho do Terraform
 
-## Terraform remote state - cons
+## State remoto do Terraform - contras
 
-- Requires additional configuration
-- Requires additional cost
+- Requer configuração adicional
+- Requer custo adicional

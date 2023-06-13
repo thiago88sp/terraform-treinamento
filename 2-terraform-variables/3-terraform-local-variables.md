@@ -1,25 +1,24 @@
-# Terraform Local Variables
+# Variáveis Locais do Terraform
 
-In this section we will look at how to use local variables in Terraform.
+Nesta seção veremos como usar variáveis locais no Terraform.
 
-## Terraform Local Variables - pros
+## Variáveis locais do Terraform - prós
 
-- Allows you to pass information into Terraform
-- Allows you to reuse the same Terraform configuration with different values
+- Permite passar informações para o Terraform
+- Permite reutilizar a mesma configuração do Terraform com valores diferentes
+## Variáveis locais do Terraform - contras
 
-## Terraform Local Variables - cons
+- Requer configuração adicional
 
-- Requires additional configuration
+## Variáveis locais do Terraform - exemplo
 
-## Terraform Local Variables - example
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando uma variável local para passar o nome do grupo de recursos para o Terraform.
 
-In this example, we will be creating a resource group in Azure. We will be using a local variable to pass the name of the resource group into Terraform.
+### Variáveis locais do Terraform - exemplo - variables.tf
 
-### Terraform Local Variables - example - variables.tf
+A criação de arquivos de variáveis é uma prática recomendada, isso permite que você mantenha todas as suas variáveis em um só lugar.
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
-
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
