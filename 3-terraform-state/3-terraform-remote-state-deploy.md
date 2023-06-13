@@ -31,7 +31,7 @@ terraform plan
 
 O plano será semelhante ao exemplo de state local anterior, mas o arquivo de state será armazenado na Conta de Armazenamento do Azure em vez de local, conforme mostrado na imagem abaixo:
 
-![Terraform plan](/images/terraform-plan.png)
+![Terraform plan](https://github.com/thiago88sp/terraform-treinamento/blob/master/3-terraform-state/images/terraform-plan.png)
 
 ## Terraform apply
 
