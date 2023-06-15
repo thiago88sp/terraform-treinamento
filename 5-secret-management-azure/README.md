@@ -1,23 +1,23 @@
-# Terraform secret management in Azure
+# Gerenciamento de segredos do Terraform no Azure
 
-Deploying resources in Azure, you will often need to pass sensitive information to the resources. This could be a password, a certificate or a key. In this tutorial, we will look at how to manage secrets in Terraform using an Azure Key Vault.
+Ao implantar recursos no Azure, muitas vezes você precisará passar informações confidenciais para os recursos. Pode ser uma senha, um certificado ou uma chave. Neste tutorial, veremos como gerenciar segredos no Terraform usando um Azure Key Vault.
 
-## Terraform secret management in Azure - pros
+## Gerenciamento de segredos do Terraform no Azure - prós
 
-- Recommended for storing sensitive information
-- Recommended for storing information that is not to be shared
+- Recomendado para armazenar informações confidenciais
+- Recomendado para armazenar informações que não devem ser compartilhadas
 
-## Terraform secret management in Azure - cons
+## Gerenciamento de segredos do Terraform no Azure - contras
 
-- Requires additional configuration
+- Requer configuração adicional
 
-## Terraform secret management in Azure - example
+## Gerenciamento de segredos do Terraform no Azure - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using an Azure Key Vault to store the name of the storage account.
+Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos um Azure Key Vault para armazenar o nome da conta de armazenamento.
 
-### Terraform secret management - example - variables.tf
+### Gerenciamento de segredos do Terraform - exemplo - variables.tf
 
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
@@ -28,9 +28,9 @@ variable "resource_group_name" {
 
 ```
 
-### Terraform secret management in Azure - example - main.tf
+### Gerenciamento de segredos do Terraform no Azure - exemplo - main.tf
 
-Storage Account name is stored in a Key Vault. The Key Vault is created in the same Terraform configuration. The Key Vault is created with an access policy that allows the current user to get the secret. The secret is then used to create the storage account.
+O nome da conta de armazenamento é armazenado em um Key Vault. O Key Vault é criado na mesma configuração do Terraform. O Key Vault é criado com uma política de acesso que permite ao usuário atual obter o segredo. O segredo é usado para criar a conta de armazenamento.
 
 ```terraform
 
@@ -87,7 +87,7 @@ resource "azurerm_storage_account" "sa" {
 
 ```
 
-Notice the use of data keyvault secret to get the secret from the Key Vault to be used as name of the storage account.
+Observe o uso do segredo do keyvault de dados para obter o segredo do Key Vault a ser usado como nome da conta de armazenamento.
 
 ```terraform
 data "azurerm_key_vault_secret" "sa" {
@@ -112,8 +112,8 @@ resource "azurerm_storage_account" "sa" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/5-secret-management-azure/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/5-secret-management-azure/terraform)
