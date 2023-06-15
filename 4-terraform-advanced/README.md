@@ -1,6 +1,6 @@
 # Terraform Advanced
 
-In this section we will be looking at some more advanced Terraform concepts:
+Nesta seção, veremos alguns conceitos mais avançados do Terraform:
 
 - Depends On 
 - For Each
@@ -8,15 +8,16 @@ In this section we will be looking at some more advanced Terraform concepts:
 - Conditional Expressions
 - Dynamic Blocks
 
-# Pre-requisites
+# Pré-requisitos
 
-1. Ensure remote storage account is configured for Terraform state. Each of the above, will contain a Terraform configuration that will be used to deploy resources to Azure to show its concept with a new state file for each.
+1. Certifique-se de que a conta de armazenamento remoto esteja configurada para o estado do Terraform. Cada um dos itens acima conterá uma configuração do Terraform que será usada para implantar recursos no Azure para mostrar seu conceito com um novo arquivo de estado para cada um.
 
-To do this, follow the steps in the [Terraform Remote State Deploy](https://github.com/thomast1906/terraform-on-azure/tree/main/2-terraform-state/3-terraform-remote-state-deploy.md) section.
 
-Please note, I will be using storage account name `deployfirsttamopssa` for the remote state storage account. You will need to change this to your own storage account name.
+Para fazer isso, siga as etapas na seção [Terraform Remote State Deploy](https://github.com/thiago88sp/terraform-treinamento/blob/master/3-terraform-state/3-terraform-remote-state-deploy.md)
 
-Each will have providers.tf, to which you change the storage account name to your own. As shown below:
+Observe que usarei o nome da conta de armazenamento `deployfirsttamopssa` para a conta de armazenamento de estado remoto. Você precisará alterar isso para o nome da sua própria conta de armazenamento.
+
+Cada um terá providers.tf, para o qual você altera o nome da conta de armazenamento para o seu. Como mostrado abaixo:
 
 ```terraform
 
@@ -43,7 +44,7 @@ provider "azurerm" {
     
     ```
 
-2. Update variables.tf with your own values. Example below shown as part of [1-depends-on](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/1-depends-on/1-depends-on-example/variables.tf)
+2. Atualize variables.tf com seus próprios valores. Exemplo abaixo mostrado como parte do [1-depends-on](https://github.com/thiago88sp/terraform-treinamento/blob/master/4-terraform-advanced/1-depends-on/terraform/variables.tf)
 
 ```terraform
 

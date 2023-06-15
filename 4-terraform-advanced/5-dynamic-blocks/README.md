@@ -1,26 +1,26 @@
 # Terraform Dynamic Blocks
 
-## Introduction
+## Introdução
 
-Dynamic blocks are a new feature in Terraform 0.12 that allow you to create dynamic blocks of configuration within your Terraform configuration files. This is useful when you want to create a block of configuration that is repeated multiple times, but with different values for each instance.
+Os blocos dinâmicos são um novo recurso do Terraform 0.12 que permite criar blocos dinâmicos de configuração nos arquivos de configuração do Terraform. Isso é útil quando você deseja criar um bloco de configuração que se repete várias vezes, mas com valores diferentes para cada instância.
 
-## Terraform Dynamic Blocks - pros
+## Terraform Dynamic Blocks - prós
 
-- Allows you to create multiple resources in a single resource block
+- Permite criar vários recursos em um único bloco de recursos
 
-## Terraform Dynamic Blocks - cons
+## Terraform Dynamic Blocks - contras
 
-- Requires additional configuration
+- Requer configuração adicional
 
-## Terraform Dynamic Blocks - example
+## Terraform Dynamic Blocks - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using the `dynamic` argument to create multiple resource groups.
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando o argumento `dynamic` para criar vários grupos de recursos.
 
-### Terraform Dynamic Blocks - example - variables.tf
+### Terraform Dynamic Blocks - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-Variable `resource_group_names` is of type `list(string)` and has a default value of `["tamopsrg", "tamopsrg2"]`.
+A variável `resource_group_names` é do tipo `list(string)` e tem um valor padrão de `["tamopsrg", "tamopsrg2"]`.
 
 ```terraform
 
@@ -31,9 +31,9 @@ variable "resource_group_names" {
 
 ```
 
-### Terraform Dynamic Blocks - example - main.tf
+### Terraform Dynamic Blocks - exemplo - main.tf
 
-In this example, we are creating a resource group. We are using the dynamic argument to create multiple resource groups.
+Neste exemplo, estamos criando um grupo de recursos. Estamos usando o argumento dinâmico para criar vários grupos de recursos.
 
 ```terraform
 
@@ -49,8 +49,8 @@ resource "azurerm_resource_group" "rg" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/5-dynamic-blocks/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/5-dynamic-blocks/terraform)

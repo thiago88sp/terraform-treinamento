@@ -1,25 +1,25 @@
 # Terraform Count
 
-In this section we will look at the count parameter in Terraform. This is a very useful parameter that allows you to create multiple resources of the same type. This is useful for creating multiple VMs, multiple NICs, multiple disks etc.
+Nesta seção, veremos o parâmetro de count no Terraform. Este é um parâmetro muito útil que permite criar vários recursos do mesmo tipo. Isso é útil para criar várias VMs, várias NICs, vários discos, etc.
 
-## Terraform Count - pros
+## Terraform Count - prós
 
-- Allows you to create multiple resources in a single resource block
+- Permite criar vários recursos em um único bloco de recursos
 
-## Terraform Count - cons
+## Terraform Count - contras
 
-- Requires additional configuration
-- Sometimes you need to use the `count.index` to reference the correct resource, this can be confusing and sometimes not recommended. It is worth adding this section, but I do much prefer using `depends_on` if you can
+-Requer configuração adicional
+- Às vezes você precisa usar o `count.index` para referenciar o recurso correto, isso pode ser confuso e às vezes não recomendado. Vale a pena adicionar esta seção, mas eu prefiro usar `depends_on` se você puder
 
-## Terraform Count - example
+## Terraform Count - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using the `count` parameter to create multiple resource groups.
+Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos o parâmetro `count` para criar vários grupos de recursos.
 
-### Terraform Count - example - variables.tf
+### Terraform Count - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-Variable `resource_group_names` is of type `list(string)` and has a default value of `["tamopsrg", "tamopsrg2"]`.
+A variável `resource_group_names` é do tipo `list(string)` e tem um valor padrão de `["tamopsrg", "tamopsrg2"]`.
 
 ```terraform
 
@@ -30,9 +30,9 @@ variable "resource_group_names" {
 
 ```
 
-### Terraform Count - example - main.tf
+### Terraform Count - exemplo - main.tf
 
-In this example, we are creating a resource group. We are using the count parameter to create multiple resource groups.
+Neste exemplo, estamos criando um grupo de recursos. Estamos usando o parâmetro de contagem para criar vários grupos de recursos.
 
 ```terraform
 
@@ -44,9 +44,9 @@ resource "azurerm_resource_group" "rg" {
 
 ```
 
-### Terraform Count - example - output.tf
+### Terraform Count - exemplo - output.tf
 
-In this example, we are creating an output. We are using the count parameter to create multiple outputs.
+Neste exemplo, estamos criando um output. Estamos usando o parâmetro de contagem para criar várias outputs.
 
 ```terraform
 
@@ -56,7 +56,7 @@ output "resource_group_names" {
 
 ```
 
-### Terraform Count - example - output
+### Terraform Count - exemplo - output
 
 ```bash
 
@@ -69,7 +69,7 @@ resource_group_names = [
 
 ```
 
-### Terraform Count - example - output second resource group
+### Terraform Count - exemplo - output do segundo grupo de recursos
 
 ```terraform
 
@@ -79,7 +79,7 @@ output "resource_group_names" {
 
 ```
 
-### Terraform Count - example - output second resource group
+### Terraform Count - example - output do segundo grupo de recursos
 
 ```bash
 
@@ -89,8 +89,8 @@ resource_group_names = "tamopsrg2"
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/3-count/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/3-count/terraform)

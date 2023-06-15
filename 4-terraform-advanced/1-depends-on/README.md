@@ -1,26 +1,26 @@
 # Terraform Depends On
-[]: # 
-[]: # A guide on how to use
+[]:#
+[]: # Um guia de como usar
 
-In this section we will be looking at the depends_on argument in Terraform.
+Nesta seção, veremos o argumento depende_on no Terraform.
 
-## Terraform Depends On - pros
+## Terraform Depends On - prós
 
-- Allows you to control the order in which resources are created
+- Permite controlar a ordem em que os recursos são criados
 
-## Terraform Depends On - cons
+## Terraform Depends On - contras
 
-- Requires additional configuration
+-Requer configuração adicional
 
-## Terraform Depends On - example
+## Terraform Depends On - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using the `depends_on` argument to control the order in which resources are created.
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando o argumento `depends_on` para controlar a ordem na qual os recursos são criados.
 
-### Terraform Depends On - example - variables.tf
+### Terraform Depends On - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
@@ -31,9 +31,9 @@ variable "resource_group_name" {
 
 ```
 
-### Terraform Depends On - example - main.tf
+### Terraform Depends On - exemplo - main.tf
 
-In this example, we are creating a resource group and a storage account. We are using the depends_on argument to control the order in which resources are created.
+Neste exemplo, estamos criando um grupo de recursos e uma conta de armazenamento. Estamos usando o argumento depends_on para controlar a ordem na qual os recursos são criados.
 
 ```terraform
 
@@ -56,8 +56,8 @@ resource "azurerm_storage_account" "sa" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/1-depends-on/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/1-depends-on/terraform)

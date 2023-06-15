@@ -1,26 +1,26 @@
 # Terraform Conditions 
 
-In this section we will look at how to use conditions in Terraform.
+Nesta seção veremos como usar condições no Terraform.
 
-## Terraform Conditions - pros
+## Terraform Conditions - prós
 
-- Allows you to control the order in which resources are created
+- Permite controlar a ordem em que os recursos são criados
 
-## Terraform Conditions - cons
+## Terraform Conditions - contras
 
-- Requires additional configuration
+- Requer configuração adicional
 
-## Terraform Conditions - example
+## Terraform Conditions - exemplo
 
-A conditional expression uses the value of a boolean expression to select one of two values.
+Uma expressão condicional usa o valor de uma expressão booleana para selecionar um dos dois valores.
 
-In this example, we will be creating a resource group in Azure. We will be using a conditional expression to control the order in which resources are created.
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando uma expressão condicional para controlar a ordem na qual os recursos são criados.
 
-### Terraform Conditions - example - variables.tf
+### Terraform Conditions - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-Variable `resource_group_name` is of type `string` and has a default value of `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
 
 ```terraform
 
@@ -37,13 +37,13 @@ variable "create_resource_group" {
 ```
 
 
-### Terraform Conditions - example - main.tf
+### Terraform Conditions - exemplo - main.tf
 
-In this example, we are creating a resource group and a storage account. We are using a conditional expression to determine whether or not to create the resource group.
+Neste exemplo, estamos criando um grupo de recursos e uma conta de armazenamento. Estamos usando uma expressão condicional para determinar se devemos ou não criar o grupo de recursos.
 
-1 returns true, 0 returns false.
+1 retorna verdadeiro, 0 retorna falso.
 
-Change the value of `create_resource_group` to `true` to create the resource group.
+Altere o valor de `create_resource_group` para `true` para criar o grupo de recursos.
 
 ```terraform
 
@@ -67,8 +67,8 @@ resource "azurerm_storage_account" "sa" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/4-conditional-expressions/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/4-conditional-expressions/terraform)

@@ -1,27 +1,27 @@
 # Terraform For Each
-[]: # 
-[]: # A guide on how to use
+[]:#
+[]: # Um guia de como usar
 
-In this section we will be looking at the for_each argument in Terraform.
+Nesta seção, veremos o argumento for_each no Terraform.
 
-## Terraform For Each - pros
+## Terraform For Each - prós
 
-- Allows you to create multiple resources in a single resource block
-- Allows you to create multiple resources in a single resource block
+- Permite criar vários recursos em um único bloco de recursos
+- Permite criar vários recursos em um único bloco de recursos
 
-## Terraform For Each - cons
+## Terraform For Each - contras
 
-- Requires additional configuration
+- Requer configuração adicional
 
-## Terraform For Each - example
+## Terraform For Each - exemplo
 
-In this example, we will be creating a resource group in Azure. We will be using the `for_each` argument to create multiple resource groups.
+Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando o argumento `for_each` para criar vários grupos de recursos.
 
-### Terraform For Each - example - variables.tf
+### Terraform For Each - exemplo - variables.tf
 
-Creating variable files is a best practice, this allows you to keep all of your variables in one place.
+A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-Variable `resource_group_names` is of type `list(string)` and has a default value of `["tamopsrg", "tamopsrg2"]`.
+A variável `resource_group_names` é do tipo `list(string)` e tem um valor padrão de `["tamopsrg", "tamopsrg2"]`.
 
 ```terraform
 
@@ -32,9 +32,9 @@ variable "resource_group_names" {
 
 ```
 
-### Terraform For Each - example - main.tf
+### Terraform For Each - exemplo - main.tf
 
-In this example, we are creating a resource group. We are using the for_each argument to create multiple resource groups.
+Neste exemplo, estamos criando um grupo de recursos. Estamos usando o argumento for_each para criar vários grupos de recursos.
 
 ```terraform
 
@@ -46,9 +46,9 @@ resource "azurerm_resource_group" "rg" {
 
 ```
 
-### Terraform For Each - example - output.tf
+### Terraform For Each - exemplo - output.tf
 
-In this example, we are creating an output. We are using the for_each argument to create multiple outputs.
+Neste exemplo, estamos criando uma saída. Estamos usando o argumento for_each para criar várias saídas.
 
 ```terraform
 
@@ -58,7 +58,7 @@ output "resource_group_names" {
 
 ```
 
-### Terraform For Each - example - output
+### Terraform For Each - exemplo - output
 
 ```bash
 
@@ -71,12 +71,12 @@ resource_group_names = [
 
 ```
 
-## Terraform For Each - further reading
+## Terraform For Each - leitura adicional
 
 - [Terraform for_each](https://www.terraform.io/docs/language/meta-arguments/for_each.html)
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/2-for-each/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/2-for-each/terraform)
