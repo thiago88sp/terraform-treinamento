@@ -42,7 +42,7 @@ provider "azurerm" {
   features {}
 }
     
-    ```
+```
 
 2. Atualize variables.tf com seus próprios valores. Exemplo abaixo mostrado como parte do [1-depends-on](https://github.com/thiago88sp/terraform-treinamento/blob/master/4-terraform-advanced/1-depends-on/terraform/variables.tf)
 
