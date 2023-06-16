@@ -1,37 +1,37 @@
 # Terraform Modules
 
-A module is a collection of resources that are used together. Modules are used to create reusable components, increase readability, and to organize infrastructure as code.
+Um módulo é uma coleção de recursos que são usados juntos. Os módulos são usados para criar componentes reutilizáveis, aumentar a legibilidade e organizar a infraestrutura como código.
 
-Writing Terraform, like any other IaC toolset, over time you may be repeating the same process for common resources such as an Azure Virtual network, Container registry, Postgres Database etc – instead of copying the same resource multiple times, you can create what is called a Terraform module to assist you with this repetition allowing you to create reusable Terraform. 
+Escrevendo Terraform, como qualquer outro conjunto de ferramentas IaC, ao longo do tempo você pode estar repetindo o mesmo processo para recursos comuns, como uma rede virtual Azure, registro de contêiner, banco de dados Postgres etc – em vez de copiar o mesmo recurso várias vezes, você pode criar o que é chamado um módulo Terraform para ajudá-lo com essa repetição, permitindo que você crie Terraform reutilizável.
 
-Modules are a great way to create reusable components, increase readability, and to organize infrastructure as code.
+Os módulos são uma ótima maneira de criar componentes reutilizáveis, aumentar a legibilidade e organizar a infraestrutura como código.
 
-## Terraform Module - Pros
+## Terraform Module - Prós
 
-- Reusable
-- Organised
-- Readable
-- Maintainable
-- Versioned
+- Reutilizável
+- Organizado
+- Legível
+- Manutenível
+- Versionado
 
-## Terraform Module - Cons
+## Terraform Module - Contras
 
-- Complexity
+- Complexidade
 
 ## Terraform Module Structure
 
-A Terraform module is a directory that contains Terraform configuration files. The directory structure of a module is as follows:
+Um módulo do Terraform é um diretório que contém arquivos de configuração do Terraform. A estrutura de diretórios de um módulo é a seguinte:
 
-What can be included as part of a Terraform module?
+O que pode ser incluído como parte de um módulo Terraform?
 
-- Terraform Resources – That deploy whenever you reference your module within Terraform
-- Terraform Inputs – From your main Terraform deployment you will input various values and configurations that will be referenced within your Terraform module
-- Terraform Outputs – Outputs that can be used once the module is deployed, for example the resource ID
-- Whatever else you want to include 🙂 – What else you want to include can be decided by you and each module is certainly different!
+- Recursos do Terraform – que são implantados sempre que você faz referência ao seu módulo no Terraform
+- Inputs do Terraform - Na implantação principal do Terraform, você inserirá vários valores e configurações que serão referenciados em seu módulo Terraform
+- Outputs do Terraform – Saídas que podem ser usadas quando o módulo é implantado, por exemplo, o ID do recurso
+- O que mais você quiser incluir 🙂 – O que mais você deseja incluir pode ser decidido por você e cada módulo é certamente diferente!
 
 ## Standard Terraform Deployment
 
-The below is a standard Terraform deployment that deploys an `Azure Resource Group` and `Azure Container Registry`
+Abaixo está uma implantação padrão do Terraform que implanta um `Azure Resource Group` e `Azure Container Registry`
 
 ```terraform
 
@@ -53,13 +53,13 @@ resource "azurerm_container_registry" "acr" {
 
 ``` 
 
-How can we make this more reusable? (This is a lightweight example) – We can create a Terraform module that will deploy the above resources. Allowing us to reference the module within our Terraform deployment and reuse the module as many times as we want.
+Como podemos tornar isso mais reutilizável? (Este é um exemplo leve) – Podemos criar um módulo Terraform que implantará os recursos acima. Permitindo-nos fazer referência ao módulo em nossa implantação do Terraform e reutilizá-lo quantas vezes quisermos.
 
 ## Terraform Module Deployment
 
-### Terraform Module - Directory Structure
+### Terraform Module - Estrutura de Diretórios
 
-The below is the directory structure of a Terraform module, basic structure that can follow similar that you have created a standard Terraform deployment.
+Abaixo está a estrutura de diretórios de um módulo Terraform, estrutura básica que pode seguir semelhante a que você criou uma implantação padrão do Terraform (Use o comando "tree").
 
 ```bash
 ├── main.tf
@@ -69,7 +69,7 @@ The below is the directory structure of a Terraform module, basic structure that
 
 ### Terraform Module - main.tf
 
-The below is the `main.tf` file that will contain the resources that will be deployed when you reference the module within your Terraform deployment.
+Abaixo está o arquivo `main.tf` que conterá os recursos que serão implantados quando você fizer referência ao módulo em sua implantação do Terraform.
 
 ```terraform
 
@@ -93,7 +93,7 @@ resource "azurerm_container_registry" "acr" {
 
 ### Terraform Module - variables.tf
 
-The below is the `variables.tf` file that will contain the variables that will be referenced within the `main.tf` file.
+Abaixo está o arquivo `variables.tf` que conterá as variáveis que serão referenciadas dentro do arquivo `main.tf`.
 
 ```terraform
 
@@ -126,7 +126,7 @@ variable "acr_admin_enabled" {
 
 ### Terraform Module - outputs.tf
 
-The below is the `outputs.tf` file that will contain the outputs that will be referenced within the `main.tf` file.
+Abaixo está o arquivo `outputs.tf` que conterá as saídas que serão referenciadas dentro do arquivo `main.tf`.
 
 ```terraform
 
@@ -138,7 +138,7 @@ output "acr_id" {
 
 ### Terraform Module - Reference
 
-The below is the `main.tf` file that will reference the module within your Terraform deployment.
+Abaixo está o arquivo `main.tf` que fará referência ao módulo em sua implantação do Terraform.
 
 ```terraform
 
@@ -154,8 +154,8 @@ module "acr" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/4-terraform-advanced/6-terraform-modules/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/6-terraform-modules/terraform)
