@@ -60,3 +60,4 @@ Por favor, comece desde o início e percorra a configuração de self-lead. Come
 Entre em contato comigo ou levante um problema no repositório do GitHub se desejar que eu inclua conteúdo adicional - acho que será um trabalho contínuo em andamento para fornecer a você uma compreensão do Terraform e, ao mesmo tempo, oferecer a capacidade de implantar recursos em Azure!
 
 
+[<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/thiagosouzapontes/)
