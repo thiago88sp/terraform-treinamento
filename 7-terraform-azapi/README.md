@@ -1,27 +1,27 @@
 # Terraform AzAPI
 
-A few months ago, there was an announcement of AzAPI Terraform provider, that enables you to manage any Azure resource type using any API version. You may be wondering, why the need for this?
+Há alguns meses, houve um anúncio do provedor de Terraform AzAPI, que permite gerenciar qualquer tipo de recurso do Azure usando qualquer versão da API. Você pode estar se perguntando, por que a necessidade disso?
 
-Some times with new resource updates or additions, the Terraform AzureRM provider is not up to date or missing a piece of functionality within a particular resource. With this new provider, you can begin deploying using Terraform from day 1 without the need to wait until AzureRM has been updated – awesome!
+Algumas vezes, com novas atualizações ou adições de recursos, o provedor Terraform AzureRM não está atualizado ou falta uma parte da funcionalidade em um determinado recurso. Com esse novo provedor, você pode começar a implantar usando o Terraform desde o primeiro dia, sem a necessidade de esperar até que o AzureRM seja atualizado – incrível!
 
-In this section, we will be looking at how to use the AzAPI provider to deploy resources to Azure.
+Nesta seção, veremos como usar o provedor AzAPI para implantar recursos no Azure.
 
-# Terraform AzAPI - Pros
+# Terraform AzAPI - Prós
 
-- You can deploy any Azure resource type using any API version
-- You can deploy resources that are not yet supported by the AzureRM provider
+- Você pode implantar qualquer tipo de recurso do Azure usando qualquer versão da API
+- Você pode implantar recursos que ainda não são suportados pelo provedor AzureRM
 
-# Terraform AzAPI - Cons
+# Terraform AzAPI - Contras
 
-- You need to know the API version of the resource you are deploying
+- Você precisa saber a versão da API do recurso que está implantando
 
 # Terraform AzAPI - example
 
-In this example, we will be deploying a new Azure Container Registry (ACR) using the AzAPI provider.
+Neste exemplo, implantaremos um novo Registro de Contêiner do Azure (ACR) usando o provedor AzAPI.
 
-Example below of the Terraform configuration files:
+Exemplo abaixo dos arquivos de configuração do Terraform:
 
-providers.tf - this is the provider configuration file, showing the AzAPI provider information required.
+providers.tf - este é o arquivo de configuração do provedor, mostrando as informações necessárias do provedor AzAPI.
 
 ```terraform
 
@@ -105,8 +105,8 @@ variable "acr_name" {
 
 ```
 
-### Run example
+### Executar exemplo
 
-You can now run the example found in this section.
+Agora você pode executar o exemplo encontrado nesta seção.
 
-Run Terraform from [here](https://github.com/thomast1906/terraform-on-azure/tree/main/7-terraform-azapi/terraform)
+Execute o Terraform [aqui](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi/terraform)
