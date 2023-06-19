@@ -7,11 +7,11 @@ Neste self-lead, você aprenderá como implantar o Terraform no Azure desde o b�
 
 Esta jornada self-lead é dividida em 7 seções:
 
-1. Terraform Basics
-- Terraform Installation
-- Terraform Basic Commands
-- Introduction to Terraform resources
-- Using Terraform Azure Provider
+1. [Terraform Basics](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics)
+- [Terraform Installation](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/1-terraform-installation)
+- [Terraform Basic Commands](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/2-terraform-commands)
+- [Introduction to Terraform resources](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/3-terraform-resources)
+- [Using Terraform Azure Provider](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/4-terraform-azure-provider)
 
 2. Terraform Variables
 - Introduction to Terraform Variables
