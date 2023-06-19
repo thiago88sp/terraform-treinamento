@@ -13,34 +13,34 @@ Esta jornada self-lead é dividida em 7 seções:
     - [Introduction to Terraform resources](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/3-terraform-resources)
     - [Using Terraform Azure Provider](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/4-terraform-azure-provider)
 
-2. Terraform Variables
-- Introduction to Terraform Variables
-- Terraform tfvars
-- Local Variables
+2. [Terraform Variables](https://github.com/thiago88sp/terraform-treinamento/tree/master/2-terraform-variables)
+    - [Introduction to Terraform Variables](https://github.com/thiago88sp/terraform-treinamento/blob/master/2-terraform-variables/1-terraform-variables.md)
+    - [Terraform tfvars](https://github.com/thiago88sp/terraform-treinamento/blob/master/2-terraform-variables/2-terraform-tfvars.md)
+    - [Local Variables](https://github.com/thiago88sp/terraform-treinamento/blob/master/2-terraform-variables/3-terraform-local-variables.md)
 
-3. Terraform State
-- Introduction to Terraform State
-- Local vs Remote State
+3. [Terraform State](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state)
+    - [Introduction to Terraform State]()
+    - [Local vs Remote State]()
 
-4. Terraform Advanced
-- Depends On
-- For Each
-- Count
-- Conditional Expressions
-- Dynamic Blocks
+4. [Terraform Advanced](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced)
+    - [Depends On](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/1-depends-on)
+    - [For Each](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/2-for-each)
+    - [Count](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/3-count)
+    - [Conditional Expressions](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/4-conditional-expressions)
+    - [Dynamic Blocks](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/5-dynamic-blocks)
 
-5. Secret Management in Azure
-- Introduction to Azure Key Vault
-- Introduction to Azure Key Vault Secrets
-- Deploying Secrets to Azure Key Vault using Terraform
+5. [Secret Management in Azure](https://github.com/thiago88sp/terraform-treinamento/tree/master/5-secret-management-azure)
+    - [Introduction to Azure Key Vault]()
+    - [Introduction to Azure Key Vault Secrets]()
+    - [Deploying Secrets to Azure Key Vault using Terraform]()
 
-6. Terraform Modules
-- Introduction to Terraform Modules
-- Using Terraform Modules & deploying
+6. [Terraform Modules]()
+    - [Introduction to Terraform Modules]()
+    - [Using Terraform Modules & deploying]()
 
-7. Terraform AzAPI
-- Introduction to Terraform AzAPI
-- Using Terraform AzAPI & deploying
+7. [Terraform AzAPI]
+    - [Introduction to Terraform AzAPI]()
+    - [Using Terraform AzAPI & deploying]()
 
 
 ## Pré-requisitos
