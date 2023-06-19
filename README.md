@@ -30,17 +30,17 @@ Esta jornada self-lead é dividida em 7 seções:
     - [Dynamic Blocks](https://github.com/thiago88sp/terraform-treinamento/tree/master/4-terraform-advanced/5-dynamic-blocks)
 
 5. [Secret Management in Azure](https://github.com/thiago88sp/terraform-treinamento/tree/master/5-secret-management-azure)
-    - [Introduction to Azure Key Vault]()
-    - [Introduction to Azure Key Vault Secrets]()
-    - [Deploying Secrets to Azure Key Vault using Terraform]()
+    - [Introduction to Azure Key Vault](https://github.com/thiago88sp/terraform-treinamento/blob/master/5-secret-management-azure/introduction-to-AzureKeyVault/README.md#introduction-to-azure-key-vault)
+    - [Introduction to Azure Key Vault Secrets](https://github.com/thiago88sp/terraform-treinamento/blob/master/5-secret-management-azure/introduction-to-AzureKeyVault/README.md#introduction-to-azure-key-vault-secrets)
+    - [Deploying Secrets to Azure Key Vault using Terraform](https://github.com/thiago88sp/terraform-treinamento/blob/master/5-secret-management-azure/README.md)
 
 6. [Terraform Modules]()
-    - [Introduction to Terraform Modules]()
-    - [Using Terraform Modules & deploying]()
+    - [Introduction to Terraform Modules](https://github.com/thiago88sp/terraform-treinamento/tree/master/6-terraform-modules)
+    - [Using Terraform Modules & deploying](https://github.com/thiago88sp/terraform-treinamento/blob/master/6-terraform-modules/README.md#terraform-module---reference)
 
 7. [Terraform AzAPI]
-    - [Introduction to Terraform AzAPI]()
-    - [Using Terraform AzAPI & deploying]()
+    - [Introduction to Terraform AzAPI](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi)
+    - [Using Terraform AzAPI & deploying](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi#terraform-azapi---example)
 
 
 ## Pré-requisitos
