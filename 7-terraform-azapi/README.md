@@ -1,8 +1,8 @@
 # Terraform AzAPI
 
-Há alguns meses, houve um anúncio do provedor de Terraform AzAPI, que permite gerenciar qualquer tipo de recurso do Azure usando qualquer versão da API. Você pode estar se perguntando, por que a necessidade disso?
+O provedor de Terraform AzAPI, que permite gerenciar qualquer tipo de recurso do Azure usando qualquer versão da API. Você pode estar se perguntando, por que a necessidade disso?
 
-Algumas vezes, com novas atualizações ou adições de recursos, o provedor Terraform AzureRM não está atualizado ou falta uma parte da funcionalidade em um determinado recurso. Com esse novo provedor, você pode começar a implantar usando o Terraform desde o primeiro dia, sem a necessidade de esperar até que o AzureRM seja atualizado – incrível!
+Algumas vezes, com novas atualizações ou adições de recursos, o provedor Terraform AzureRM não está atualizado ou falta uma parte da funcionalidade em um determinado recurso. Com esse novo provedor, você pode começar a implantar usando o Terraform desde o primeiro dia, sem a necessidade de esperar até que o AzureRM seja atualizado.
 
 Nesta seção, veremos como usar o provedor AzAPI para implantar recursos no Azure.
 
