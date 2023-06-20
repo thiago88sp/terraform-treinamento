@@ -1,11 +1,10 @@
 # Terraform no Azure
-Um repositório self-led para fornecer a você uma compreensão sobre a implantação do Terraform no Azure, desde o básico até a implantação no Azure.
-
+Um repositório autoguiado para lhe fornecer um entendimento sobre como implantar o Terraform no Azure, desde o básico até a implantação no Azure.
 ## O que você vai aprender
 
-Neste self-lead, você aprenderá como implantar o Terraform no Azure desde o básico até a implantação no Azure.
+Neste repositório autoguiado, você aprenderá como implantar o Terraform no Azure, desde o básico até a implantação no Azure.
 
-Esta jornada self-lead é dividida em 7 seções:
+Esta jornada autoguiada está dividida em 7 seções:
 
 1. [Terraform Basics](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics)
     - [Terraform Installation](https://github.com/thiago88sp/terraform-treinamento/tree/master/1-terraform-basics/1-terraform-installation)
@@ -47,17 +46,17 @@ Esta jornada self-lead é dividida em 7 seções:
 
 - [Azure Account](https://azure.microsoft.com/en-us/free/)
 
-## Como usar este formato de repo / formato self-lead
+## Como usar este repositório / formato de autoguiado
 
-Este repositório é dividido em 7 seções, cada seção tem um arquivo README.md que o guiará pelo self-lead. Cada seção pode ter vários arquivos README.md que irão guiá-lo através da seção. Eles também são numerados para ajudá-lo a navegar.
+Este repositório está dividido em 7 seções, cada seção possui um arquivo README.md que o guiará durante o autoguiado. Cada seção pode ter vários arquivos README.md que o guiarão através da seção. Eles também estão numerados para ajudar na navegação.
 
-Por favor, comece desde o início e percorra a configuração de self-lead. Começando em 1 e trabalhando até 7.
+Por favor, comece desde o início e siga a configuração do autoguiado. Começando em 1 e avançando até o 7.
 
-À medida que você trabalha com a autoliderança, você será solicitado a executar várias formas de terra. Certifique-se de estar no diretório `terraform` correto ao executar os comandos terraform. (Você aprenderá como fazer isso na seção 3 [terraform state](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state)) - Lembre-se também de destruir seus recursos quando terminar cada seção.
+Conforme você avança no autoguiado, será solicitado que execute vários comandos do Terraform. Certifique-se de estar no diretório correto do Terraform ao executar os comandos. (Você aprenderá como fazer isso na seção 3 - [terraform state](https://github.com/thiago88sp/terraform-treinamento/tree/master/3-terraform-state)) - Lembre-se também de destruir seus recursos quando terminar cada seção.
 
-## Solicite um novo tutorial / recurso neste repositório
+## Solicitar um novo tutorial/recursos neste repositório
 
-Entre em contato comigo ou levante um problema no repositório do GitHub se desejar que eu inclua conteúdo adicional - acho que será um trabalho contínuo em andamento para fornecer a você uma compreensão do Terraform e, ao mesmo tempo, oferecer a capacidade de implantar recursos em Azure!
+Por favor, entre em contato comigo ou abra uma issue no repositório do GitHub se você deseja que eu inclua conteúdo adicional. Sinto que será um trabalho contínuo em progresso para lhe fornecer um entendimento do Terraform, ao mesmo tempo em que lhe dá a capacidade de implantar recursos no Azure!
 
-
+## Para se conectar comigo no Linkedin
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/thiagosouzapontes/)
