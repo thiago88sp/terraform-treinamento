@@ -41,7 +41,7 @@ Esta jornada autoguiada está dividida em 7 seções:
     - [Introduction to Terraform Modules](https://github.com/thiago88sp/terraform-treinamento/tree/master/6-terraform-modules)
     - [Using Terraform Modules & deploying](https://github.com/thiago88sp/terraform-treinamento/blob/master/6-terraform-modules/README.md#terraform-module---reference)
 
-7. [Terraform AzAPI]
+7. [Terraform AzAPI]()
     - [Introduction to Terraform AzAPI](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi)
     - [Using Terraform AzAPI & deploying](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi#terraform-azapi---example)
 
