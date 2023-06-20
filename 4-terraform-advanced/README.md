@@ -1,4 +1,4 @@
-# Terraform Advanced
+# Terraform Avançado
 
 Nesta seção, veremos alguns conceitos mais avançados do Terraform:
 
