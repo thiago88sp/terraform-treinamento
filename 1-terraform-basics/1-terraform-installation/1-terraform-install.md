@@ -2,7 +2,7 @@
 
 Vamos começar com a instalação do Terraform
 
-## Janelas
+## Windows
 Recomendo usar o Gerenciador de Pacotes do Windows [Chocolatey](https://chocolatey.org/), é ótimo!
 - Depois de configurar isso, execute o seguinte:
 ```powershell
