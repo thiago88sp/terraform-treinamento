@@ -2,8 +2,12 @@
 
 O objetivo deste tutorial é fornecer um guia passo a passo para a instalação do Terraform, uma ferramenta de infraestrutura como código amplamente utilizada para provisionar e gerenciar recursos em várias plataformas de nuvem.
 
-- Instalação de Terraform
+Há diversas maneiras de instalar o Terraform, mas neste material abordaremo as seguintes instalações:
+
+- Instalação de Terraform (Chocolatey)
 - Visual Studio Code (recomendado)
+
+Para outros métodos de instalações, consulte o próprio site da Hashicorp no link à seguir: [Install Terraform](https://developer.hashicorp.com/terraform/tutorials/aws-get-started/install-cli)
 
 # Requisitos Iniciais
 
