@@ -31,7 +31,7 @@ provider "azapi" {
 terraform {
   backend "local" {
     resource_group_name  = "deploy-first-rg"
-    storage_account_name = "deployfirsttamopssa"
+    storage_account_name = "deployfirstlabopssa"
     container_name       = "azapi"
     key                  = "terraform.tfstate"
   }
@@ -99,7 +99,7 @@ variable "location" {
 variable "acr_name" {
   type        = string
   description = "The name of the container registry."
-  default     = "tamopsacr"
+  default     = "labopsacr"
 }
 
 

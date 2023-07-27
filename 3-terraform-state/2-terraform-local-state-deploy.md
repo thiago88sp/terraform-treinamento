@@ -43,7 +43,7 @@ Terraform will perform the following actions:
   + resource "azurerm_resource_group" "rg" {
       + id       = (known after apply)
       + location = "uksouth"
-      + name     = "tamopslocalrg"
+      + name     = "labopslocalrg"
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
@@ -71,7 +71,7 @@ Terraform will perform the following actions:
   + resource "azurerm_resource_group" "rg" {
       + id       = (known after apply)
       + location = "uksouth"
-      + name     = "tamopslocalrg"
+      + name     = "labopslocalrg"
     }
 
 Plan: 1 to add, 0 to change, 0 to destroy.
@@ -95,8 +95,8 @@ A successful destroy will look like the following:
 
 ```terraform
 thiago@WINAPYhsTSuZd8T local-state-example % terraform destroy
-azurerm_resource_group.rg: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tamopslocalrg]
-azurerm_resource_group.rg: Destroying... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/tamopslocalrg]
+azurerm_resource_group.rg: Refreshing state... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/labopslocalrg]
+azurerm_resource_group.rg: Destroying... [id=/subscriptions/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/resourceGroups/labopslocalrg]
 azurerm_resource_group.rg: Destruction complete after 1s
 
 Destroy complete! Resources: 1 destroyed.

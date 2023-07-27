@@ -15,7 +15,7 @@ Nesta seção, veremos alguns conceitos mais avançados do Terraform:
 
 Para fazer isso, siga as etapas na seção [Terraform Remote State Deploy](https://github.com/thiago88sp/terraform-treinamento/blob/master/3-terraform-state/3-terraform-remote-state-deploy.md)
 
-Observe que usarei o nome da conta de armazenamento `deployfirsttamopssa` para a conta de armazenamento de estado remoto. Você precisará alterar isso para o nome da sua própria conta de armazenamento.
+Observe que usarei o nome da conta de armazenamento `deployfirstlabopssa` para a conta de armazenamento de estado remoto. Você precisará alterar isso para o nome da sua própria conta de armazenamento.
 
 Cada um terá providers.tf, para o qual você altera o nome da conta de armazenamento para o seu. Como mostrado abaixo:
 
@@ -24,7 +24,7 @@ Cada um terá providers.tf, para o qual você altera o nome da conta de armazena
 terraform {
    backend "azurerm" {
         resource_group_name  = "deploy-first-rg"
-        storage_account_name = "deployfirsttamopssa"
+        storage_account_name = "deployfirstlabopssa"
         container_name       = "tfstate"
         key                  = "terraform.tfstate"
     }

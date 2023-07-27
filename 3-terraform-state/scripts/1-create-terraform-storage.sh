@@ -4,7 +4,7 @@
 # Cria a conta de armazenamento relevante para armazenar o estado do terraform localmente
 
 RESOURCE_GROUP_NAME="deploy-first-rg"
-STORAGE_ACCOUNT_NAME="deployfirsttamopssa"
+STORAGE_ACCOUNT_NAME="deployfirstlabopssa"
 
 # Criar grupo de recursos
 az group create -l uksouth -n $RESOURCE_GROUP_NAME

@@ -3,7 +3,7 @@ module "acr" {
 
   resource_group_name = "meuprimeirorsg"
   location            = "UK South"
-  acr_name            = "tamopsacr"
+  acr_name            = "labopsacr"
   acr_sku             = "Standard"
   acr_admin_enabled   = true
 }

@@ -4,11 +4,11 @@ As principais implantações do Terraform são feitas usando um ou mais recursos
 
 ## Exemplo de Resource
 
-O abaixo contém um recurso chamado `rg` que usa o recurso terraform `azurerm_resource_group` para criar um grupo de recursos do Azure chamado `tamops` na região `UK South`
+O abaixo contém um recurso chamado `rg` que usa o recurso terraform `azurerm_resource_group` para criar um grupo de recursos do Azure chamado `labops` na região `UK South`
 
 ```terraform
 resource "azurerm_resource_group" "rg" {
-  name     = "tamops"
+  name     = "labops"
   location = "UK South"
 }
 ```
@@ -17,18 +17,18 @@ Leia mais sobre o uso de recursos [aqui](https://developer.hashicorp.com/terrafo
 
 ## ## Exemplo de Data source
 
-Se os `tamops` do Grupo de Recursos do Azure acima já tiverem sido criados anteriormente ou em outra implantação do Terraform, utilizando a fonte de dados - você pode fazer referência ao grupo de recursos.
+Se os `labops` do Grupo de Recursos do Azure acima já tiverem sido criados anteriormente ou em outra implantação do Terraform, utilizando a fonte de dados - você pode fazer referência ao grupo de recursos.
 
-O abaixo faz referência ao recurso de dados `azurerm_resource_group` `rg` para implantar a conta de armazenamento do Azure `tamopsstorage`.
+O abaixo faz referência ao recurso de dados `azurerm_resource_group` `rg` para implantar a conta de armazenamento do Azure `labstorage`.
 - observe que a referência de `resource_group_name` e `location` está usando a referência de dados do Grupo de Recursos?
 
 ```terraform
 data "azurerm_resource_group" "rg" {
-  name = "tamops"
+  name = "labops"
 }
 
 resource "azurerm_storage_account" "sa" {
-  name                     = "tamopsstorage"
+  name                     = "labstorage"
   resource_group_name      = data.azurerm_resource_group.rg.name
   location                 = data.azurerm_resource_group.rg.location
   account_tier             = "Standard"

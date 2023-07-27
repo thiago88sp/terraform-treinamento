@@ -1,7 +1,7 @@
 terraform {
   backend "azurerm" {
     resource_group_name  = "deploy-first-rg"
-    storage_account_name = "deployfirsttamopssa"
+    storage_account_name = "deployfirstlabopssa"
     container_name       = "acr"
     key                  = "terraform.tfstate"
   }

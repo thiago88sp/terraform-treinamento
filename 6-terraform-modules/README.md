@@ -37,14 +37,14 @@ Abaixo está uma implantação padrão do Terraform que implanta um `Azure Resou
 
 # Resource Group
 resource "azurerm_resource_group" "rg" {
-  name     = "tamops"
+  name     = "labops"
   location = "UK South"
 }
 
 # Azure Container Registry
 
 resource "azurerm_container_registry" "acr" {
-  name                = "tamopsacr"
+  name                = "labopsacr"
   resource_group_name = azurerm_resource_group.rg.name
   location            = azurerm_resource_group.rg.location
   sku                 = "Standard"
@@ -145,9 +145,9 @@ Abaixo está o arquivo `main.tf` que fará referência ao módulo em sua implant
 module "acr" {
   source = "./modules/acr"
 
-  resource_group_name = "tamops"
+  resource_group_name = "labops"
   location            = "UK South"
-  acr_name            = "tamopsacr"
+  acr_name            = "labopsacr"
   acr_sku             = "Standard"
   acr_admin_enabled   = true
 }

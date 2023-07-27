@@ -13,5 +13,5 @@ variable "location" {
 variable "acr_name" {
   type        = string
   description = "The name of the container registry."
-  default     = "tamopsacr"
+  default     = "labopsacr"
 }
