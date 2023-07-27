@@ -1,6 +1,6 @@
 variable "resource_group_name" {
   type = string
-  default = "tamopsrg"
+  default = "meuprimeirorsg"
 }
 
 variable "create_resource_group" {

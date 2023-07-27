@@ -17,13 +17,13 @@ Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos um Azure Key Va
 
 ### Gerenciamento de segredos do Terraform - exemplo - variables.tf
 
-A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `meuprimeirorsg`.
 
 ```terraform
 
 variable "resource_group_name" {
   type = string
-  default = "tamopsrg"
+  default = "meuprimeirorsg"
 }
 
 ```

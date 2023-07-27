@@ -19,13 +19,13 @@ Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos o parâmetro `c
 
 A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-A variável `resource_group_names` é do tipo `list(string)` e tem um valor padrão de `["tamopsrg", "tamopsrg2"]`.
+A variável `resource_group_names` é do tipo `list(string)` e tem um valor padrão de `["meuprimeirorsg", "meuprimeirorsg2"]`.
 
 ```terraform
 
 variable "resource_group_names" {
   type = list(string)
-  default = ["tamopsrg", "tamopsrg2"]
+  default = ["meuprimeirorsg", "meuprimeirorsg2"]
 }
 
 ```
@@ -63,8 +63,8 @@ output "resource_group_names" {
 Outputs:
 
 resource_group_names = [
-  "tamopsrg",
-  "tamopsrg2",
+  "meuprimeirorsg",
+  "meuprimeirorsg2",
 ]
 
 ```
@@ -85,7 +85,7 @@ output "resource_group_names" {
 
 Outputs:
 
-resource_group_names = "tamopsrg2"
+resource_group_names = "meuprimeirorsg2"
 
 ```
 

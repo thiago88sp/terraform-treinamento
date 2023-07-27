@@ -20,13 +20,13 @@ Neste exemplo, criaremos um grupo de recursos no Azure. Estaremos usando o argum
 
 A criação de arquivos de variáveis ​​é uma prática recomendada, isso permite que você mantenha todas as suas variáveis ​​em um só lugar.
 
-A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `meuprimeirorsg`.
 
 ```terraform
 
 variable "resource_group_name" {
   type = string
-  default = "tamopsrg"
+  default = "meuprimeirorsg"
 }
 
 ```

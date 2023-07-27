@@ -20,7 +20,7 @@ Neste exemplo, criaremos um grupo de recursos no Azure. Usaremos um arquivo tfva
 
 A criação de arquivos de variáveis é uma prática recomendada, isso permite que você mantenha todas as suas variáveis em um só lugar.
 
-A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `tamopsrg`.
+A variável `resource_group_name` é do tipo `string` e tem um valor padrão de `meuprimeirorsg`.
 
 ```terraform
 
@@ -32,11 +32,11 @@ variable "resource_group_name" {
 
 ### Terraform tfvars - exemplo - terraform.tfvars
 
-Observe a referência à variável `resource_group_name` no arquivo tfvars. Isso é usado para passar o valor `tamopsrg` para a variável `resource_group_name`.
+Observe a referência à variável `resource_group_name` no arquivo tfvars. Isso é usado para passar o valor `meuprimeirorsg` para a variável `resource_group_name`.
 
 ```terraform
 
-resource_group_name = "tamopsrg"
+resource_group_name = "meuprimeirorsg"
 
 ```
 
