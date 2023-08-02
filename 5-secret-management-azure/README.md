@@ -36,7 +36,7 @@ O nome da conta de armazenamento é armazenado em um Key Vault. O Key Vault é c
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = "uksouth"
+  location = "Brazil South"
 }
 
 resource "azurerm_key_vault" "kv" {

@@ -49,7 +49,7 @@ Altere o valor de `create_resource_group` para `true` para criar o grupo de recu
 
 resource "azurerm_resource_group" "rg" {
   name     = var.resource_group_name
-  location = "uksouth"
+  location = "Brazil South"
 }
 
 resource "azurerm_storage_account" "sa" {

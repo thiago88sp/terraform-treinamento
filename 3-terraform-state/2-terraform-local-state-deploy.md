@@ -42,7 +42,7 @@ Terraform will perform the following actions:
   # azurerm_resource_group.rg will be created
   + resource "azurerm_resource_group" "rg" {
       + id       = (known after apply)
-      + location = "uksouth"
+      + location = "Brazil South"
       + name     = "labopslocalrg"
     }
 
@@ -70,7 +70,7 @@ Terraform will perform the following actions:
   # azurerm_resource_group.rg will be created
   + resource "azurerm_resource_group" "rg" {
       + id       = (known after apply)
-      + location = "uksouth"
+      + location = "Brazil South"
       + name     = "labopslocalrg"
     }
 

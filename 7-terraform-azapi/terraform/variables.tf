@@ -7,7 +7,7 @@ variable "resource_group_name" {
 variable "location" {
   type        = string
   description = "The Azure location where the container registry should exist."
-  default     = "uksouth"
+  default     = "Brazil South"
 }
 
 variable "acr_name" {
