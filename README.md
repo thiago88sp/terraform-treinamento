@@ -65,4 +65,5 @@ Por favor, entre em contato comigo ou abra uma issue no repositório do GitHub s
 ## Para se conectar comigo no Linkedin
 [<img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />](https://www.linkedin.com/in/thiagosouzapontes/)
 
+##
 Obs. Estre treinamento é algo que foi produzido com base ao treinamento criado pelo [Thomas Thornton](https://github.com/thomast1906), porém adaptado a lingua portuguesa e com ajustes de informações que acho relevante para o aprendizado.
