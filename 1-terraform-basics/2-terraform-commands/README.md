@@ -9,4 +9,5 @@ Este guia foi criado para ajudar você a obter um conhecimento fundamental sobre
 Então, vamos mergulhar nos comandos Terraform e começar a aproveitar os benefícios da automação da infraestrutura por meio do código!
 
 
-<img width="438" alt="image" src="https://github.com/thiago88sp/terraform-treinamento/assets/54182968/8f9fd21c-a9f0-43d8-8c66-0094413bc3a5">
+![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/b5b2dfa4-74c5-449d-b8c7-ffeda472e13c)
+
