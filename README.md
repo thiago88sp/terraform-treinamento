@@ -1,6 +1,6 @@
 # Terraform no Azure
 
-<img width="359" alt="Terraform-Azure" src="https://github.com/thiago88sp/terraform-treinamento/assets/54182968/65833c38-f730-472b-a6e8-731ff6cf3c48">
+![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/f09ad7ae-adaa-4a89-8115-c1f903d14aa9)
 
 
 Um repositório autoguiado para lhe fornecer um entendimento sobre como implantar o Terraform no Azure, desde o básico até a implantação no Azure.
