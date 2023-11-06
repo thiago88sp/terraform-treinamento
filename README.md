@@ -45,6 +45,7 @@ Esta jornada autoguiada está dividida em 7 seções:
     - [Introduction to Terraform AzAPI](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi)
     - [Using Terraform AzAPI & deploying](https://github.com/thiago88sp/terraform-treinamento/tree/master/7-terraform-azapi#terraform-azapi---example)
 
+8. [Exemplos de Códigos Terraform]()
 
 ## Pré-requisitos
 
