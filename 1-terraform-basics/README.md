@@ -1,6 +1,6 @@
 ## Como o Terraform funciona?
 
-![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/08a241ca-43f8-4cf8-8a66-9c084296ead1)
+![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/aaa24181-e307-4de5-b00f-a8c6d62b148b)
 
 O fluxo de trabalho principal do Terraform consiste em três estágios:
 
