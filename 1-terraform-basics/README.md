@@ -1,3 +1,9 @@
+## O que é o Terraform?
+
+Trata-se de uma ferramenta de infraestrutura como código (IaC) que permite gerenciar à infraestrutura com arquivos de configuração em vez de por meio de uma interface gráfica do usuário. O IaC permite que você crie, altere e gerencie sua infraestrutura de maneira segura, consistente e repetível, definindo configurações de recursos que você pode versionar, reutilizar e compartilhar.
+
+![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/50cc3197-6a9d-447d-b5da-18271de793fa)
+
 ## Como o Terraform funciona?
 
 ![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/aaa24181-e307-4de5-b00f-a8c6d62b148b)
