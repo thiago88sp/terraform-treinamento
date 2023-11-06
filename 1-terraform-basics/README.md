@@ -2,7 +2,7 @@
 
 Trata-se de uma ferramenta de infraestrutura como código (IaC) que permite gerenciar à infraestrutura com arquivos de configuração em vez de por meio de uma interface gráfica do usuário. O IaC permite que você crie, altere e gerencie sua infraestrutura de maneira segura, consistente e repetível, definindo configurações de recursos que você pode versionar, reutilizar e compartilhar.
 
-![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/50cc3197-6a9d-447d-b5da-18271de793fa)
+![image](https://github.com/thiago88sp/terraform-treinamento/assets/54182968/778a8985-1fbb-4860-94c6-3179b2ca6144)
 
 ## Como o Terraform funciona?
 
